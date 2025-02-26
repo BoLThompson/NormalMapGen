@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div
+      style="position:absolute; display:flex; flex-direction: column; justify-content: flex-end; height: 100%;"
+    >
+      <div>
+        Translation <input type="number" value="0" id="xTran">
+        <input type="number" value="0" id="yTran">
+        <input type="number" value="-600" id="zTran"><br/>
+        Rotation: <input type="range" step=".01" min="0" max="6.28" value="0" class="slider" id="xRot">
+        <input type="range" step=".01" min="0" max="6.28" value="0" class="slider" id="yRot">
+        <input type="range" step=".01" min="0" max="6.28" value="0" class="slider" id="zRot"><br/>
+        Scale: <input type="number" value = "0.007" id="scale"/><br/>
+        Specularity: <input type="number" value = "3" id="specularity"/><br/>
+      </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
